@@ -33,6 +33,24 @@
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+    /* background: linear-gradient(90deg, #00cea8, #bf61ff, #003fdf,#00cea8); */
+
+
+.github-gradient {
+    background: linear-gradient(90deg, #00cea8, #bf61ff, #003fdf,#00cea8);
+  background-size: 300% 300%;
+  animation: borderFlow 20s linear infinite;
+}
+
+@keyframes githubFlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 300% 50%;
+  }
+}
+
 .violet-gradient {
   background: #804dee;
   background: linear-gradient(-90deg, #804dee 0%, rgba(60, 51, 80, 0) 100%);
@@ -43,11 +61,80 @@
   );
 }
 
+
 .green-pink-gradient {
-  background: "#00cea8";
-  background: linear-gradient(90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
-  background: -webkit-linear-gradient(-90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
+  background: linear-gradient(90deg, #00cea8, #bf61ff, #003fdf,#00cea8);
+  background-size: 300% 300%;
+  animation: borderFlow 7s linear infinite;
 }
+
+@keyframes borderFlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 300% 50%;
+  }
+}
+
+.flowing-text {
+  background: linear-gradient(90deg, #00cea8, #bf61ff, #00cea8);
+  background-size: 300% 300%;
+  animation: textFlow 20s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+@keyframes textFlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 300% 50%;
+  }
+}
+
+.hover-gradient-border {
+  position: relative;
+  border-radius: 1rem;
+  z-index: 0;
+}
+
+.hover-gradient-border::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 2px; /* thickness of the border */
+  background: linear-gradient(90deg, #ceaf00, #e4b50a, #fba401, #e98007);
+  background-size: 300% 300%;
+  animation: borderFlow 15s linear infinite;
+  -webkit-mask: 
+    linear-gradient(#000 0 0) content-box, 
+    linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.hover-gradient-border:hover::before {
+  opacity: 1;
+}
+
+@keyframes borderFlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 300% 50%;
+  }
+}
+
+
+
 
 .orange-text-gradient {
   background: #f12711; /* fallback for old browsers */

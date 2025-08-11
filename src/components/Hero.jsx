@@ -1,10 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { styles } from '../styles'
 import { motion } from 'framer-motion'
 import { ComputersCanvas } from './canvas'
+import { useScroll } from '@react-three/drei'
 
 
 const Hero = () => {
+  const [blur, setBlured] = useState(false)
   return (
     <section className='relative w-full h-screen mx-auto'>
       <div className={`${styles.paddingX} absolute inset-0  top-[120px] max-w-7xl mx-auto flex flex-row items-start gap-5`}>
@@ -13,9 +15,9 @@ const Hero = () => {
           <div className='w-1 sm:h-80 h-40 violet-gradient'/>
         </div>
 
-        <div>
+        <div >
           <h1 className={`${styles.heroHeadText}`}>Hi, I'm <span className='text-[#915eff]'>Imroz</span></h1>
-          <p className={`${styles.heroSubText} mt-2 text-white-100`}>I develop 3D visuals, user <br className='sm:block hidden'/>interfaces and web applications.
+          <p className={`${styles.heroSubText} mt-2 text-white-100`}>I develop Softwares, Websites and Designs <br className='sm:block hidden'/>interfaces and web applications.
           </p>
         </div>
 

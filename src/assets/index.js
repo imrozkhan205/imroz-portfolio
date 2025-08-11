@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
@@ -25,11 +24,15 @@ import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
+import kaizennic from './company/kaizennic.png'
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
-import imroz_logo from "./imroz.png";
+import imroz_logo from "./imroz_logo.png";
+import skyradar from './skyradar.png'
+import sts from './sts.png';
+import hms from  './hms.png'
 export {
   imroz_logo,
   backend,
@@ -59,4 +62,8 @@ export {
   carrent,
   jobit,
   tripguide,
+  kaizennic,
+  skyradar,
+  sts,
+  hms
 };

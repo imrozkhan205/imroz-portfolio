@@ -1,0 +1,111 @@
+import React, { Suspense, useEffect, useState } from 'react';
+import { Canvas } from '@react-three/fiber';
+import { OrbitControls, Preload, useGLTF } from '@react-three/drei';
+import CanvasLoader from '../Loader';
+
+// Computer component to render the 3D model
+const Computers = ({ isMobile }) => {
+  const [model, setModel] = useState(null);
+  const [modelError, setModelError] = useState(null);
+
+  // Load the 3D model with error handling
+  useEffect(() => {
+    try {
+      const computer = useGLTF('/desktop_pc/scene.gltf');
+      console.log("Model loaded successfully:", computer);
+      setModel(computer);
+    } catch (error) {
+      console.error("Error loading model:", error);
+      setModelError(error);
+    }
+  }, []);
+
+  // Log any issues with the model
+  useEffect(() => {
+    if (modelError) {
+      console.error("Model failed to load:", modelError);
+    }
+  }, [modelError]);
+
+  return (
+    <mesh>
+      {/* Scene lighting */}
+      <hemisphereLight intensity={0.15} groundColor="black" />
+      <pointLight intensity={1} />
+      <spotLight 
+        position={[-20, 50, 10]} 
+        angle={0.12}
+        penumbra={1}
+        intensity={1}
+        castShadow
+        shadow-mapSize={1024}
+      />
+
+      {/* Debug cube to verify rendering is working properly */}
+      <mesh position={[0, 0, 0]} scale={0.2}>
+        <boxGeometry args={[1, 1, 1]} />
+        <meshStandardMaterial color="red" />
+      </mesh>
+
+      {/* Render the model if loaded successfully */}
+      {model && (
+        <primitive 
+          object={model.scene}
+          scale={isMobile ? 0.6 : 0.75}
+          position={isMobile ? [0, -3, -2.2] : [0, -3.75, -1.5]}
+          rotation={[-0.01, -0.2, -0.1]}
+        />
+      )}
+    </mesh>
+  );
+};
+
+// Main canvas component with responsive design
+const ComputersCanvas = () => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  // Set up responsive behavior
+  useEffect(() => {
+    // Check if device is mobile
+    const mediaQuery = window.matchMedia('(max-width: 500px)');
+    setIsMobile(mediaQuery.matches);
+
+    // Define a callback function to handle changes to the media query
+    const handleMediaQueryChange = (event) => {
+      setIsMobile(event.matches);
+    };
+
+    // Add the callback function as a listener for changes to the media query
+    mediaQuery.addEventListener('change', handleMediaQueryChange);
+
+    // Clean up function
+    return () => {
+      mediaQuery.removeEventListener('change', handleMediaQueryChange);
+    };
+  }, []);
+
+  return (
+    <Canvas
+      frameloop='demand'
+      shadows
+      camera={{ position: [20, 3, 5], fov: 25 }}
+      gl={{ preserveDrawingBuffer: true }}
+    >
+      <Suspense fallback={<CanvasLoader />}>
+        <OrbitControls 
+          enableZoom={false} 
+          maxPolarAngle={Math.PI / 2}
+          minPolarAngle={Math.PI / 2}
+        />
+        <Computers isMobile={isMobile} />
+      </Suspense>
+      <Preload all />
+    </Canvas>
+  );
+};
+
+// Make sure model is preloaded for better performance
+useGLTF.preload('/desktop_pc/scene.gltf');
+
+// Export the correct component - the Canvas wrapper
+export default ComputersCanvas;
