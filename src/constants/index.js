@@ -137,28 +137,18 @@ import {
   
   const testimonials = [
     {
-      testimonial:
-        "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-      name: "Sara Lee",
-      designation: "CFO",
-      company: "Acme Co",
-      image: "https://randomuser.me/api/portraits/women/4.jpg",
+      testimonial: "Awesome development speed with amazing UI/UX. ",
+      name: "Ammar Shivkar",
+      designation: "Founder",
+      company: "Kaizennic",
+      image: "https://media.licdn.com/dms/image/v2/D4E0BAQEA5PyHeWis6g/company-logo_200_200/B4EZfXNjeqGcAI-/0/1751662344652/kaizennic_logo?e=1758153600&v=beta&t=EruBq7CjPgBqk_zCzCav8Jg535LRg590hL2dGJlNrzE",
     },
     {
-      testimonial:
-        "I've never met a web developer who truly cares about their clients' success like Rick does.",
-      name: "Chris Brown",
-      designation: "COO",
-      company: "DEF Corp",
-      image: "https://randomuser.me/api/portraits/men/5.jpg",
-    },
-    {
-      testimonial:
-        "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-      name: "Lisa Wang",
-      designation: "CTO",
-      company: "456 Enterprises",
-      image: "https://randomuser.me/api/portraits/women/6.jpg",
+      testimonial: "Amazing guy to work with, the understanding and persistence is appreciable.",
+      name: "Mashayaque",
+      designation: "Co-Founder",
+      company: "Kaizennic",
+      image: "https://media.licdn.com/dms/image/v2/D4E0BAQEA5PyHeWis6g/company-logo_200_200/B4EZfXNjeqGcAI-/0/1751662344652/kaizennic_logo?e=1758153600&v=beta&t=EruBq7CjPgBqk_zCzCav8Jg535LRg590hL2dGJlNrzE",
     },
   ];
   
@@ -180,14 +170,19 @@ import {
           name: "tailwind",
           color: "pink-text-gradient",
         },
+        {
+          name: "node",
+          color: "yellow-text-gradient",
+        },
       ],
       image: hms,
       source_code_link: "https://github.com/imrozkhan205/hospital_management_system",
+      live_link: ""
     },
     {
       name: "Support Ticketing System",
       description:
-        "This is a system which is primarily made for clients who we work with, Support Ticketing System(STS) includes 3 types of users: Admin, Support, Customer. In which customer creates a ticket and admin assigns that ticket to a support, where the customer can communicate with the Support via Chat which works in real time, implemented in real time.",
+        "This is a system which is primarily made for clients who we work with, Support Ticketing System(STS) includes 3 types of users: Admin, Support, Customer. In which customer creates a ticket and admin assigns that ticket to a support, where the customer can communicate with the Support via Chat which works in real time.",
       tags: [
         {
           name: "react",
@@ -200,6 +195,11 @@ import {
         {
           name: "tailwind",
           color: "pink-text-gradient",
+        },
+
+        {
+          name: "node",
+          color: "yellow-text-gradient",
         },
       ],
       image: sts,
@@ -215,16 +215,21 @@ import {
           color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
+          name: "mysql",
           color: "green-text-gradient",
         },
         {
           name: "tailwind",
           color: "pink-text-gradient",
         },
+        {
+          name: "node",
+          color: "yellow-text-gradient",
+        },
       ],
       image: skyradar,
       source_code_link: "https://github.com/imrozkhan205/skyradar",
+      live_link: "https://skyradar-seven.vercel.app"
     },
 
     

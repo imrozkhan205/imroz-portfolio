@@ -33,6 +33,7 @@ import imroz_logo from "./imroz_logo.png";
 import skyradar from './skyradar.png'
 import sts from './sts.png';
 import hms from  './hms.png'
+import live from './live.png'
 export {
   imroz_logo,
   backend,
@@ -65,5 +66,6 @@ export {
   kaizennic,
   skyradar,
   sts,
-  hms
+  hms,
+  live
 };

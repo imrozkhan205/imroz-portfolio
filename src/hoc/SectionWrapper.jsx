@@ -20,7 +20,7 @@ const SectionWrapper = (Component, idName) => {
     );
   }
   
-  return HOC; // <-- This was missing
+  return HOC;
 };
 
 export default SectionWrapper;
