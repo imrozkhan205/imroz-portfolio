@@ -154,9 +154,9 @@ import {
   
   const projects = [
     {
-      name: "Hospital Management System",
+      name: "Hospital Mgnt System",
       description:
-        "An industry level software made using MySQL, Express, Node and React Hospital Management System primarily helps the patients to book an appointment with a doctor with ease by sitting at home. It works like: There are 3 main users, Admin, Doctor, Patient where Admin or Doctor can create a Patient account by creating username and password and once made the patient can sign in using those credentials and can book an appointment with any doctor in that hospital, I also did the limitations check for the patients to create 1 appointment with 1 doctor in a single day. The appointment process is very simple and that's what this system makes so much better",
+        "An industry level software which primarily helps the patients to book an appointment with a doctor with ease by sitting at home. It works like: There are 3 main users, Admin, Doctor, Patient where Admin or Doctor can create a Patient account by creating username and password and once made the patient can sign in using those credentials and can book an appointment with any doctor in that hospital.",
       tags: [
         {
           name: "react",
