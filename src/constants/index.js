@@ -163,7 +163,7 @@ import {
           color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
+          name: "mysql",
           color: "green-text-gradient",
         },
         {
@@ -215,7 +215,7 @@ import {
           color: "blue-text-gradient",
         },
         {
-          name: "mysql",
+          name: "mongodb",
           color: "green-text-gradient",
         },
         {
