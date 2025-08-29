@@ -15,11 +15,7 @@ import {
     git,
     figma,
     docker,
-    meta,
-    starbucks,
-    tesla,
-    shopify,
-    carrent,
+
     jobit,
     tripguide,
     threejs,
@@ -144,7 +140,7 @@ import {
       image: "https://media.licdn.com/dms/image/v2/D4E0BAQEA5PyHeWis6g/company-logo_200_200/B4EZfXNjeqGcAI-/0/1751662344652/kaizennic_logo?e=1758153600&v=beta&t=EruBq7CjPgBqk_zCzCav8Jg535LRg590hL2dGJlNrzE",
     },
     {
-      testimonial: "Amazing guy to work with, the understanding and persistence is appreciable.",
+      testimonial: "Dedicated developer and develops fast",
       name: "Mashayaque",
       designation: "Co-Founder",
       company: "Kaizennic",

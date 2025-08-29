@@ -19,18 +19,18 @@ const ProjectCard = ({index, name, description, tags, image, source_code_link, l
           alt={name}
           className='w-full h-full object-cover rounded-2xl'
           />
-          <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
+          <div className='absolute inset-0 flex justify-end m-3 gap-2 card-img_hover'>
             <div onClick={() => window.open(source_code_link, "_blank")}
             className='github-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer' 
               >
-                <img src={github} alt='github' className='w-1/2 h-1/2 object-contain  '/>
+                <img src={github} alt='github' className='w-1/2 h-1/2 object-contain '/>
             </div>
             
             {live_link && (
               <div onClick={() => window.open(live_link, "_blank")}
-              className='github-radient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
+              className='github-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
               >
-                  <img src={live} alt='live link' className='w-1/2 h-1/2 object-contain rounded-lg'  /> 
+                  <img src={live} alt=' live link' className='w-1/2 h-1/2 object-contain rounded-lg'  /> 
               </div>
             )}
             
