@@ -204,6 +204,7 @@ import {
       ],
       image: sts,
       source_code_link: "https://github.com/imrozkhan205/Support-Ticketing-System-CRM-",
+      live_link: "https://support-ticketing-system-crm.vercel.app"
     },
     {
       name: "Sky radar",
