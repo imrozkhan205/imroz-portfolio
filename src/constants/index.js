@@ -22,7 +22,8 @@ import {
     kaizennic,
     skyradar,
     sts,
-    hms
+    hms,
+    taskManager
   } from "../assets";
   
   export const navLinks = [
@@ -203,12 +204,12 @@ import {
       live_link: "https://support-ticketing-system-crm.vercel.app"
     },
     {
-      name: "Sky radar",
+      name: "Task Manager App",
       description:
-        "A minimilist MERN stack project which lets you know which airplane is above you in real time. It asks for permission of location and gives back the information of the flight above you. ",
+        "A Task manager App which have authentication and CRUD operations. User can create an account and can add, delete, update tasks. User can also browse, search, filter their tasks. It is made using React-native using expo for frontend and Nodejs, Express, MongoDB for backend.",
       tags: [
         {
-          name: "react",
+          name: "react-native",
           color: "blue-text-gradient",
         },
         {
@@ -216,21 +217,14 @@ import {
           color: "green-text-gradient",
         },
         {
-          name: "tailwind",
-          color: "pink-text-gradient",
-        },
-        {
           name: "node",
           color: "yellow-text-gradient",
         },
       ],
-      image: skyradar,
-      source_code_link: "https://github.com/imrozkhan205/skyradar",
-      live_link: "https://skyradar-seven.vercel.app"
+      image: taskManager,
+      source_code_link: "https://github.com/imrozkhan205/task-manager-app",
+      live_link: "https://expo.dev/accounts/imrozkhan/projects/task-manager/builds/8bdd295d-077c-49da-b696-f0e91f61d2ad"
     },
-
-    
-    
   ]
   
   export { services, technologies, experiences, testimonials, projects };
