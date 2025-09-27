@@ -23,7 +23,7 @@ import {
     skyradar,
     sts,
     hms,
-    taskManager
+    noteify
   } from "../assets";
   
   export const navLinks = [
@@ -138,14 +138,14 @@ import {
       name: "Ammar Shivkar",
       designation: "Founder",
       company: "Kaizennic",
-      image: "https://media.licdn.com/dms/image/v2/D4E0BAQEA5PyHeWis6g/company-logo_200_200/B4EZfXNjeqGcAI-/0/1751662344652/kaizennic_logo?e=1758153600&v=beta&t=EruBq7CjPgBqk_zCzCav8Jg535LRg590hL2dGJlNrzE",
+      image: "https://media.licdn.com/dms/image/v2/D4E0BAQEA5PyHeWis6g/company-logo_200_200/B4EZfXNjeqGcAI-/0/1751662344652/kaizennic_logo?e=1761782400&v=beta&t=b4mvP9aBGzMZo_mNilwqTQz8bnRVs3P_Y_zNXahf1Jw",
     },
     {
-      testimonial: "Dedicated developer and develops fast",
+      testimonial: "Dedicated Android and Web developer, Ships fast.",
       name: "Mashayaque",
       designation: "Co-Founder",
       company: "Kaizennic",
-      image: "https://media.licdn.com/dms/image/v2/D4E0BAQEA5PyHeWis6g/company-logo_200_200/B4EZfXNjeqGcAI-/0/1751662344652/kaizennic_logo?e=1758153600&v=beta&t=EruBq7CjPgBqk_zCzCav8Jg535LRg590hL2dGJlNrzE",
+      image: "https://media.licdn.com/dms/image/v2/D4E0BAQEA5PyHeWis6g/company-logo_200_200/B4EZfXNjeqGcAI-/0/1751662344652/kaizennic_logo?e=1761782400&v=beta&t=b4mvP9aBGzMZo_mNilwqTQz8bnRVs3P_Y_zNXahf1Jw",
     },
   ];
   
@@ -206,7 +206,7 @@ import {
     {
       name: "Task Manager App",
       description:
-        "A Task manager App which have authentication and CRUD operations. User can create an account and can add, delete, update tasks. User can also browse, search, filter their tasks. It is made using React-native using expo for frontend and Nodejs, Express, MongoDB for backend.",
+        "Developed an Android application using React Native (Expo) with JWT-based authentication (Sign Up, Sign In, and Logout)Implemented core task management features: create, update, edit, and delete tasks; assign priorities and due dates; and track task progress. Tasks are stored and fetched from MongoDB.Added advanced functionalities including task search, calendar view (upcoming and today’s tasks), and filters based on priority and completion status.",
       tags: [
         {
           name: "react-native",
@@ -221,9 +221,9 @@ import {
           color: "yellow-text-gradient",
         },
       ],
-      image: taskManager,
+      image: noteify,
       source_code_link: "https://github.com/imrozkhan205/task-manager-app",
-      live_link: "https://expo.dev/accounts/imrozkhan/projects/task-manager/builds/8bdd295d-077c-49da-b696-f0e91f61d2ad"
+      live_link: "https://expo.dev/accounts/imrozkhan/projects/noteify/builds/8388dfc1-cee7-4e19-9ae3-ee66487cb1cd"
     },
   ]
   

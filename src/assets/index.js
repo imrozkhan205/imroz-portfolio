@@ -29,7 +29,7 @@ import skyradar from './skyradar.png'
 import sts from './sts.png';
 import hms from  './hms.png'
 import live from './live.png'
-import taskManager from './taskManager.png'
+import noteify from './noteify.png'
 export {
   imroz_logo,
   backend,
@@ -56,7 +56,7 @@ export {
   tripguide,
   kaizennic,
   skyradar,
-  taskManager,
+  noteify,
   sts,
   hms,
   live
